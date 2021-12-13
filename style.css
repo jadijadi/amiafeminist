@@ -39,10 +39,15 @@
 
 body{
 	font-family: sans-ultra !important;
+	background-color: #6a60a9;
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: sans;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
 }
 /************************************************
 	content
@@ -67,6 +72,10 @@ h1,h2,h3,h4,h5,h6{
 
 .nav-top{
 	background-color: #f9c00c;
+	position:fixed;
+	width:100%;
+	z-index:1;
+	top:0
 }
 
 .body{
@@ -106,7 +115,9 @@ h1,h2,h3,h4,h5,h6{
 	color: #ebebeb;
 	font-size: 1.0em;
 	padding-bottom: 1em;
-	width: 50%;
+	width: 80%;
+	max-width: 720px;
+	text-align: justify;
 	margin: 0 auto;
 }
 
@@ -149,34 +160,31 @@ h1,h2,h3,h4,h5,h6{
 .svg{
 	margin-top: 320px;
 }
+a.telegram  {
+	color: #fff;
+	padding:8px 16px;
+}
+
+a:hover.telegram  {
+	color:  #29a9ea;
+}
+
 a.twitter  {
 	color: #fff;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding:8px 16px;
 }
 
 a:hover.twitter  {
-	color:  #00aced;
+	color:  #1d9bf0;
 }
 
 a.facebook  {
 	color: #fff;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding:8px 16px;
 }
 
 a:hover.facebook  {
-	color:  #3b5998;
-}
-
-a.gplus  {
-	color: #fff;
-	padding-left: 10px;
-	padding-bottom: 10px;
-}
-
-a:hover.gplus  {
-	color:  #d34836;
+	color:  #1877f2;
 }
  /*==========  Non-Mobile First Method  ==========*/
 
@@ -189,10 +197,6 @@ a:hover.gplus  {
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-
-    	.bodycon{
-    		height: auto;
-    	}
 
 		.content h1{
 			color: rgb(255, 255, 255);
