@@ -37,6 +37,11 @@
 	box-sizing: border-box;
 }
 
+*::selection {
+	color:#ebebeb;
+	background-color: #f9c00c;
+}
+
 body{
 	font-family: sans-ultra !important;
 }
